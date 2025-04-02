@@ -18,8 +18,8 @@ const nextConfig = {
     unoptimized: true,  // Already set for static export
   },
   // GitHub Pages configuration
-  basePath: process.env.NODE_ENV === 'production' ? '/Next-Resume' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Next-Resume/' : '',
+  basePath: '/Next-Resume',
+  assetPrefix: '/Next-Resume/',
   trailingSlash: true,
   experimental: {
     webpackBuildWorker: true,
@@ -28,7 +28,7 @@ const nextConfig = {
   },
   // Configure webpack to handle relative paths
   webpack: (config) => {
-    config.output.publicPath = './'
+    config.output.publicPath = 'auto';
     return config;
   },
 }

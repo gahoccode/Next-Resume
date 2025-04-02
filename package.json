@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out",
+    "preview": "npx serve out -p 3001 && start http://localhost:3001/local-preview.html"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
