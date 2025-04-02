@@ -28,7 +28,7 @@ const nextConfig = {
   },
   // Configure webpack to handle relative paths
   webpack: (config) => {
-    config.output.publicPath = process.env.NODE_ENV === 'production' ? './' : '/';
+    config.output.publicPath = './'
     return config;
   },
 }
