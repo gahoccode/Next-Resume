@@ -18,8 +18,8 @@ const nextConfig = {
     unoptimized: true,  // Already set for static export
   },
   // GitHub Pages configuration
-  basePath: process.env.NODE_ENV === 'production' ? '/resume-template' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/resume-template/' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/Next-Resume' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/Next-Resume/' : '',
   trailingSlash: true,
   experimental: {
     webpackBuildWorker: true,
