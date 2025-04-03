@@ -4,10 +4,16 @@ export default function Resume() {
   return (
     <div className="bg-white min-h-screen flex justify-center">
       <div className="max-w-5xl w-full bg-white relative">
+        {/* Centered Name Box - Moved to top of component for better stacking */}
+        <div className="relative md:absolute w-full md:w-2/3 border-4 border-black p-4 md:p-6 bg-white text-center z-10 mx-auto md:left-1/2 md:transform md:-translate-x-1/2 md:top-4 mb-8 md:mb-0">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-wider uppercase mb-2">LE MINH TAM</h1>
+          <p className="text-gray-600">FP&A SPECIALIST</p>
+        </div>
+        
         <div className="flex flex-col md:flex-row">
           {/* Left Column - Sidebar */}
           <div className="w-full md:w-1/3 bg-gray-100 min-h-screen p-6">
-            <div className="mb-8 mt-32">
+            <div className="mb-8 md:mt-32">
               <h2 className="text-lg font-bold uppercase border-b-2 border-black pb-1 mb-4">DETAILS</h2>
               <div className="mb-4">
                 <p className="font-semibold">ADDRESS</p>
@@ -94,9 +100,9 @@ export default function Resume() {
             </div>
           </div>
 
-          {/* Right Column */}
-          <div className="w-full md:w-2/3 p-6">
-            <div className="mb-8 mt-32">
+          {/* Right Column - Main Content */}
+          <div className="w-full md:w-2/3 p-6 md:pl-12">
+            <div className="mb-8 md:mt-32">
               <h2 className="text-lg font-bold uppercase border-b-2 border-black pb-1 mb-4">PROFILE</h2>
               <p className="text-gray-700 mb-4">
                 Results-driven FP&A specialist delivering actionable financial insights that guide strategic
@@ -202,11 +208,7 @@ export default function Resume() {
           </div>
         </div>
 
-        {/* Centered Name Box */}
-        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-2/3 border-4 border-black p-6 bg-white text-center z-10">
-          <h1 className="text-3xl font-bold tracking-wider uppercase mb-2">LE MINH TAM</h1>
-          <p className="text-gray-600">FP&A SPECIALIST</p>
-        </div>
+        {/* Name box moved to top of component */}
       </div>
     </div>
   )
